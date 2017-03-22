@@ -28,7 +28,8 @@ var watch = function() {
 
 var x = new watch();
 var $time;
-var clockTimer
+var clockTimer;
+var running = false;
 
 function pad(num, size) {
     var s = "0000" + num;
@@ -62,11 +63,13 @@ function update() {
 function start() {
     clockTimer = setInterval("update()", 1);
     x.start();
+    running = true;
 }
 
 function stop() {
     x.stop();
     clearInterval(clockTimer);
+    running = false;
 }
 
 function reset() {
