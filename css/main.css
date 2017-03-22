@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #4f66b4; }
+  body #time {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 72px;
+    color: #dfd97d; }
+  body div {
+    text-align: center; }
+    body div .btns {
+      height: 40px;
+      width: 100px;
+      font-size: 20px;
+      margin: 30px;
+      margin-top: 10px;
+      background-color: #d6dceb;
+      border-style: none;
+      border-radius: 10px;
+      box-shadow: 3px 2px 5px black;
+      letter-spacing: 1px; }
+
+/*# sourceMappingURL=main.css.map */

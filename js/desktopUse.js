@@ -12,5 +12,10 @@ $(document).ready(function() {
                 location.reload();
             }
         }
+    });
+
+
+    $(".btns").mouseup(function() {
+        this.blur();
     })
 })
