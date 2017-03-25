@@ -11,10 +11,20 @@
 <body onload="show();">
     <h1 id="time"></h1>
 
-    <div>
+    <div id="controls">
         <input type="button" class="btns" value="START" onclick="start();">
         <input type="button" class="btns" value="STOP" onclick="stop();">
         <input type="button" class="btns" value="RESET" onclick="reset();">
+    </div>
+
+    <div id="timeinspection">
+        <h3 id="drpdwnTitle">Set time inspection</h3>
+        <div id="content">
+            <input type="button" class="contentBtns" value="3 seconds">
+            <input type="button" class="contentBtns" value="5 seconds">
+            <input type="button" class="contentBtns" value="10 seconds">
+            <input type="button" class="contentBtns" value="15 seconds">
+        </div>
     </div>
 
     <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
