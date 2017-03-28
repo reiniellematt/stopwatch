@@ -21,8 +21,39 @@ body {
       border-radius: 10px;
       box-shadow: 3px 2px 5px black;
       letter-spacing: 1px; }
-  body #drpdwnTitle {
-    background-color: #d6dceb;
-    width: 180px; }
+  body #timeinspection {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; }
+    body #timeinspection #drpdwnTitle {
+      text-transform: uppercase;
+      color: #e2e5c9;
+      background-color: #52426b;
+      padding: 10px; }
+      body #timeinspection #drpdwnTitle:hover {
+        cursor: pointer; }
+    body #timeinspection #content {
+      background-color: #7889c3;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+      margin-top: 70px; }
+      body #timeinspection #content .contentBtns {
+        border-style: none;
+        padding: 10px;
+        margin: 5px; }
+        body #timeinspection #content .contentBtns:hover {
+          cursor: pointer;
+          background-color: #a1add8; }
+  body #countdown {
+    margin-left: 20px; }
 
-/*# sourceMappingURL=main.css.map */
+#timeinspection {
+  position: relative;
+  display: inline-block; }
+  #timeinspection #content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1; }
+  #timeinspection:hover #content {
+    display: block; }

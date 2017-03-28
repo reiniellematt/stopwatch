@@ -30,6 +30,8 @@ var x = new watch();
 var $time;
 var clockTimer;
 var running = false;
+var countdown = 0;
+var timer;
 
 function pad(num, size) {
     var s = "0000" + num;
