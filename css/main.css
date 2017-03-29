@@ -14,7 +14,8 @@ body {
       height: 40px;
       width: 100px;
       font-size: 20px;
-      margin: 10px 30px 30px 30px;
+      margin: 30px;
+      margin-top: 10px;
       background-color: #d6dceb;
       border-style: none;
       border-radius: 10px;
@@ -44,16 +45,6 @@ body {
           background-color: #a1add8; }
   body #countdown {
     margin-left: 20px; }
-
-@media screen and (max-width: 480px) {
-  body {
-    margin: 5px; }
-    body #time {
-      font-size: 60px; }
-    body #controls .btns {
-      width: 80px;
-      margin: 10px 20px 0 20px;
-      font-size: 20px; } }
 
 #timeinspection {
   position: relative;
