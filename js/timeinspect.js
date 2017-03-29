@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     function countDown(time) {
         var t = time - secs;
 
@@ -10,10 +10,10 @@ $(document).ready(function() {
         }
     }
 
+
     $("button").click(function() {
         $("#drpdwnTitle").html($(this).text());
         countdown = 0;
-        $("#countdown").html(countdown);
     })
 
     $("#drpdwnTitle").click(function() {

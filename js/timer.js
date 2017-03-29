@@ -56,6 +56,7 @@ function formatTime(time) {
 function show() {
     $time = document.getElementById("time");
     update();
+    countdown = 0;
 }
 
 function update() {

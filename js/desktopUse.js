@@ -1,21 +1,34 @@
 $(document).ready(function() {
+
+    function startAndStop() {
+        if(running === false) {
+            start();
+        }
+        else if(running === true) {
+            stop();
+        }
+        else {
+            alert("An error occured!");
+            setTimeout(function() {location.reload()}, 3000);
+        }
+    }
+
     $(window).keypress(function(e) {
         if(e.keyCode === 32) {
-            timer = setInterval(function() {
+            if(countdown !== 0) {
+                timer = setInterval(function() {
                     countdown--;
                     $("#countdown").html(countdown.toString());
                     if(countdown === 0) {
                         $("#countdown").html(" ");
-                        if(running === true) {
-                            stop();
-                        }
-                        else if(running === false) {
-                            start();
-                        }
+                        startAndStop();
                         clearInterval(timer);
                     }
                 }, 1000)
-         
+            }
+            else if(countdown === 0) {
+                startAndStop();
+            }
         }
     });
 
