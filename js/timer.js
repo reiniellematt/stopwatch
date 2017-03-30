@@ -30,7 +30,7 @@ var x = new watch();
 var $time;
 var clockTimer;
 var running = false;
-var countdown = 0;
+var countdown;
 var timer;
 
 function pad(num, size) {
@@ -64,9 +64,25 @@ function update() {
 }
 
 function start() {
-    clockTimer = setInterval("update()", 1);
-    x.start();
-    running = true;
+    if(countdown !== 0) {
+            timer = setInterval(function() {
+                countdown--;
+                $("#countdown").html(countdown.toString());
+                if(countdown === 0) {
+                    $("#countdown").html(" ");
+                    clockTimer = setInterval("update()", 1);
+                    x.start();
+                    running = true;
+                    clearInterval(timer);
+                }
+            }, 1000)
+        }
+        else if(countdown === 0) {
+            clockTimer = setInterval("update()", 1);
+            x.start();
+            running = true;
+        }
+    
 }
 
 function stop() {
@@ -79,4 +95,5 @@ function reset() {
     stop();
     x.reset();
     update();
+    (countdown === 0) ? $("#countdown").html(" ") : $("#countdown").html(countdown);
 }
