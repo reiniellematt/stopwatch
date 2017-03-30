@@ -13,11 +13,13 @@ $(document).ready(function() {
 
     $("button").click(function() {
         $("#drpdwnTitle").html($(this).text());
-        countdown = 0;
+        // countdown = 0;
     })
 
     $("#drpdwnTitle").click(function() {
         $(this).html("SET TIME INSPECTION");
+        countdown = 0;
+        $("#countdown").html(" ");
     })
 
     $(".contentBtns:nth-child(1)").click(function() {
@@ -39,6 +41,4 @@ $(document).ready(function() {
         countdown = 15;
         $("#countdown").html(countdown);
     })
-
-    
 })
