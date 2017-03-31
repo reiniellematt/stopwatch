@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   margin: 0;
   font-family: "Open Sans";
@@ -49,10 +50,21 @@ body {
   body {
     margin: 5px; }
     body #time {
-      font-size: 60px; }
+      font-size: 55px; }
     body #controls .btns {
       width: 80px;
       margin: 10px 20px 0 20px;
       font-size: 20px; } }
+#timeinspection {
+  position: relative;
+  display: inline-block; }
+  #timeinspection #content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1; }
+  #timeinspection:hover #content {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
