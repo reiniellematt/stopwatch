@@ -2,7 +2,11 @@
 body {
   margin: 0;
   font-family: "Open Sans";
+<<<<<<< HEAD
   background-color: #20b52f; }
+=======
+  background-color: green; }
+>>>>>>> 1f3c563afe13dd4e8e47ad9bd622dad376d27f6e
   body #time {
     text-align: center;
     margin-top: 120px;
