@@ -6,7 +6,6 @@ This project is made by me, a student who is interested in code. So I would like
 
 ### Features
 * Stopwatch which can be controlled by keyboard(SPACE for start/stop, R for reset)
-* Timer for cube inspection (not compatible for mobile phones)
 
 
 # Enjoy
